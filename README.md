@@ -1,5 +1,5 @@
-##react basics
-#basic
+##react thumbrules
+
 1. You can put any valid JavaScript expression inside the curly braces in JSX.
 2. React elements are immutable. 
 3. Whether you declare a component as a function or a class, it must never modify its own props.  
