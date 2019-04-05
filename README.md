@@ -1,4 +1,4 @@
-##react thumbrules
+#react thumbrules
 
 1. You can put any valid JavaScript expression inside the curly braces in JSX.
 2. React elements are immutable. 
@@ -10,3 +10,7 @@
 
 
 1. Help for setting up the project without using create-react-app (https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658)
+
+#about this project 
+1. start using script "npm run start"
+2. create a build in the folder ./dist using script "npm run build"
