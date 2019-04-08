@@ -7,7 +7,7 @@
 5. React Components name should start with Capital letter by convention.
 6. State is similar to props, but it is private and fully controlled by the component.
 7. When you call setState(), React merges the object you provide into the current state. The merging is shallow, so this.setState({comments}) leaves this.state.posts intact, but completely replaces this.state.comments.
-
+8. State is similar to props, but it is private and fully controlled by the component.
 
 1. Help for setting up the project without using create-react-app (https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658)
 
