@@ -1,6 +1,10 @@
 import React, { Component} from "react";
+import { connect } from "react-redux";
 
-export default class App extends Component {
+class App extends Component {
+    componentDidMount() {
+        this.props.dispatch({type: "LOGIN_REQUEST_COMPLETE", payload: {isAuthenticated: true}});
+    }
     render() {
         return(
             <div>
@@ -9,3 +13,12 @@ export default class App extends Component {
         );
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        sessionData: state.sessionData
+    }
+}
+
+
+export default connect(mapStateToProps)(App);
