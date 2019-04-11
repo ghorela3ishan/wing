@@ -9,6 +9,7 @@
 7. When you call setState(), React merges the object you provide into the current state. The merging is shallow, so this.setState({comments}) leaves this.state.posts intact, but completely replaces this.state.comments.
 8. State is similar to props, but it is private and fully controlled by the component.
 9. Keys serve as a hint to React but they don’t get passed to your components. If you need the same value in your component, pass it explicitly as a prop with a different name.
+10. There should be a single “source of truth” for any data that changes in a React application. 
 
 1. Help for setting up the project without using create-react-app (https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658)
 
