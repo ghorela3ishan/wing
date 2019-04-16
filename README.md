@@ -15,7 +15,7 @@
 
 # react router
 1.Note: Instead of <a href="/"> we use <Link to="/">.
-2.  A <Route> with no path will always match.
+2.A <Route> with no path will always match.
 
 #about this project 
 1. start using script "npm run start"
