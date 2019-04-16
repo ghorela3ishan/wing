@@ -13,6 +13,10 @@
 
 1. Help for setting up the project without using create-react-app (https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658)
 
+# react router
+1.Note: Instead of <a href="/"> we use <Link to="/">.
+2.  A <Route> with no path will always match.
+
 #about this project 
 1. start using script "npm run start"
 2. create a build in the folder ./dist using script "npm run build"
