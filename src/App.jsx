@@ -1,5 +1,6 @@
 import React, { Component} from "react";
 import { connect } from "react-redux";
+// import { FormattedMessage } from "react-intl";
 
 class App extends Component {
     componentDidMount() {
@@ -9,6 +10,9 @@ class App extends Component {
         return(
             <div>
                 <h1>Finally it's working</h1>
+                {/* <FormattedMessage
+                    id="app.intro"
+                /> */}
             </div>
         );
     }
