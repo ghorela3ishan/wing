@@ -1,6 +1,6 @@
 import App from "../../App";
 import About from "../../components/About";
-import UnknownPath from "../../components/unknownPath";
+import UnknownPath from "../../components/UnknownPath";
 
 const routes = [
     {
