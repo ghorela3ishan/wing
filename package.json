@@ -2,11 +2,13 @@
   "name": "wing",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.jsx",
+  "main": "dist/bundle.js",
   "scripts": {
     "transpile": "babel src/core/Internationalization/mergeTranslations.js -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development"
+    "dev": "webpack-dev-server --mode development",
+    "start": "webpack",
+    "heroku-postbuild": "npm run start"
   },
   "keywords": [],
   "author": "",
