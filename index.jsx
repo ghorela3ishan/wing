@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import App from "./src/App";
 import { Provider } from "react-redux"; 
-import store from "./core/Store";
-import rootReducer from "./services/rootReducer";
-import saga from "./services/saga";
+import store from "./src/core/Store";
+import rootReducer from "./src/services/rootReducer";
+import saga from "./src/services/saga";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import routes from "./core/Routing/router";
+import routes from "./src/core/Routing/router";
 // import { IntlProvider } from "react-intl";
 // import translation from "./core/Internationalization/internationalization";
 
