@@ -2,7 +2,7 @@
   "name": "wing",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/bundle.js",
+  "main": "public/index.html",
   "scripts": {
     "transpile": "babel src/core/Internationalization/mergeTranslations.js -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
