@@ -21,9 +21,12 @@ module.exports = {
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
     path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
+    publicPath: "",
     filename: "bundle.js"
   },
-  plugins: [new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin()]
+  plugins: [new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin({
+    title: "HimSafar",
+    template: "index.html"
+  })]
 
 }

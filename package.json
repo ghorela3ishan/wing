@@ -7,8 +7,7 @@
     "transpile": "babel src/core/Internationalization/mergeTranslations.js -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --open --config webpack.dev.js",
-    "start": "webpack --config webpack.prod.js node server.js",
-    "heroku-postbuild": "npm run start"
+    "start": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
