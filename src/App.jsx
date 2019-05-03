@@ -9,7 +9,7 @@ class App extends Component {
     render() {
         return(
             <div>
-                <h1>Finally it's working</h1>
+                <h1>Let's begin with HimSafar !!</h1>
                 {/* <FormattedMessage
                     id="app.intro"
                 /> */}
