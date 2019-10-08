@@ -1,4 +1,4 @@
-##react thumbrules
+#react thumbrules
 
 1. You can put any valid JavaScript expression inside the curly braces in JSX.
 2. React elements are immutable. 
