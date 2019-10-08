@@ -8,5 +8,5 @@ module.exports = merge(common, {
         path: path.resolve(__dirname, "dist/"),
         publicPath: "",
         filename: '[name].[hash].js'
-      },
+      }
 });
