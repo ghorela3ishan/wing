@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 class App extends Component {
     componentDidMount() {
-        console.log(process.env.NODE_ENV)
+        console.log('env',process.env.NODE_ENV)
         this.props.dispatch({type: "LOGIN_REQUEST_COMPLETE", payload: {isAuthenticated: true}});
     }
     render() {
