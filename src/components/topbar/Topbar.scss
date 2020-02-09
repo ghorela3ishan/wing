@@ -1,0 +1,50 @@
+.topbar{
+    position: sticky;
+    top: 0;
+    height: 60px;
+    background-color: #d7ffff;
+    padding: 8px 32px 0px 30px;
+    .myTravel {
+        color: #000000;
+        font-size: 20px;
+        font-weight: 900;
+        font-family: monospace;
+        padding-right: 5px;
+        vertical-align: text-bottom;
+    }
+    .store {
+        color: #000000;
+        font-size: 20px;
+        font-weight: 900;
+        font-family: fantasy;
+        vertical-align: text-bottom;
+    }
+    .olaImage {
+        padding: 0px 7px;
+    }
+    .title {
+        text-decoration: none;
+        float: left;
+        padding: 10px 20px;
+        display: inline;
+    }
+    .productsLinkCont {
+        padding: 10px 20px;
+        float: right;
+    }
+    .cartLinkCont {
+        padding: 10px 20px;
+        float: right;
+    }
+    .linkcont {
+        text-decoration: none;
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.8);
+        padding: 11px 22px;
+        vertical-align: middle;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+}

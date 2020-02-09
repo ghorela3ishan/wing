@@ -1,0 +1,51 @@
+.productDetails {
+    width: 90%;
+    margin: 1% 9%;
+    .imgSec {
+        .imageCont {
+
+        }
+    }
+    .infogSec {
+        .descripCont {
+
+        }
+        .priceCont {
+    
+        }
+    }
+    .btnCont {
+        position: fixed;
+        bottom: 5px;
+        input {
+            color: white;
+            padding: 17px 16px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 13px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    .addToCart {
+        right: 12%;
+        .add {
+            background-color: #008CBA;
+        }
+        .added{
+            cursor: no-drop;
+            background-color: grey;
+        }
+    }
+    .buyNow {
+        right: 21%;
+        margin-bottom: 1.1%;
+        .buyBtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 15px;
+            text-decoration: none;
+        }
+    }
+    
+}
