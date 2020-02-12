@@ -40,15 +40,15 @@ class ProductDetails extends Component {
                     </div>
                     <div className="infoSec">
                         <div className="descripCont">{product.description}</div>
-                        <div className="priceCont">{product.price}</div>
+                        <div className="priceCont">₹ {product.cost}</div>
+                        <div className="btnCont buyNow">
+                            <Link className="buyBtn" to={toAttrs}>Buy Now</Link>
+                        </div>
+                        <div className="btnCont addToCart">
+                            <input className={btnClass} type="button" onClick={() => {this.props.addToCart(product)}} value={text}/>
+                        </div>
                     </div>
-                    <div className="btnCont buyNow">
-                        <Link className="buyBtn" to={toAttrs}>Buy Now</Link>
-                    </div>
-                    <div className="btnCont addToCart">
-                        <input className={btnClass} type="button" onClick={() => {this.props.addToCart(product)}} value={text}/>
-                    </div>
-            </div>
+                </div>
         )
     }
 }

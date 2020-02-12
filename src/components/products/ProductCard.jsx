@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 export default class ProductCard extends Component {
     render() {
-        let  { src, description, price, isCheckout } = this.props;
+        let  { src, description, price, isCheckout, cost } = this.props;
         let imgClass ="imageCont";
         let descripClass = "descripCont";
         if (isCheckout) {
@@ -16,7 +16,7 @@ export default class ProductCard extends Component {
                 <div className="product">
                     <img src={src} alt="Product Image" className={imgClass}/>
                     <div className={descripClass}>{description}</div>
-                    <div className="priceCont">{price}</div>
+                    <div className="priceCont">₹ {cost}</div>
                 </div>
             </Link>
         );

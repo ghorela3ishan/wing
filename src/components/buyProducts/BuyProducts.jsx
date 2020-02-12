@@ -6,7 +6,9 @@ import { fetchProducts } from "../../services/products/actions";
 import ProductCard from "../products/ProductCard";
 import PaymentSec from "../paymentSec/PaymentSec";
 import  { clearCart } from "../../services/cart/actions";
+import { Link } from "react-router-dom";
 import "./BuyProducts.scss"
+import InfoBar from "../shared/infoBar/InfoBar";
 
 class BuyProducts extends Component {
     state = {
@@ -67,11 +69,18 @@ class BuyProducts extends Component {
                         </div>
                     </div> 
                     :
-                    <div> Your order has been placed</div> 
+                    <InfoBar>
+                        <p> Your order has been placed. You can browse more <Link to="/"  className="link"> here </Link></p>
+                    </InfoBar> 
                 )
                 : 
-                <div className="noItems">No items in your cart !</div>
-
+                    <InfoBar>
+                       <p>Oops! No items in your cart. Find some amazing pictures 
+                         <Link to="/"  className="link"> here </Link>
+                             and add them to your 
+                         <Link to="/buyProducts" className="link"> Cart</Link>
+                     </p> 
+                    </InfoBar>
             }
         </>   
         )

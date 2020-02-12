@@ -1,3 +1,9 @@
+.fieldTitle {
+    margin-top: 20px;
+    .mandatory {
+        color: #dc5858;
+    }
+}
 .inputCls {
     padding: 10px;
 
@@ -10,4 +16,11 @@
     border: none;
     margin: 0.5% 0;
     cursor: pointer;
+}
+
+.errCont {
+    color: #dc5858;
+    .err {
+        margin: 0;
+    }
 }
