@@ -1,5 +1,5 @@
 import React, { Component} from "react";
-import "./infoBar.scss";
+import "./InfoBar.scss";
 
 
 export default class InfoBar extends Component {
