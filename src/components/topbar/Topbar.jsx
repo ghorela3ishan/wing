@@ -1,9 +1,11 @@
 import React, { Component} from "react";
 import "./Topbar.scss";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
-export default class Topbar extends Component {
+class Topbar extends Component {
     render() {
+        let cartTotalItems = this.props.cartItems.length;
         return (
             <div className="topbar">
                 <Link to="" className="title">
@@ -11,8 +13,19 @@ export default class Topbar extends Component {
                     <span className="store">Store</span>
                 </Link>
                 <Link to="/"  className="productsLinkCont linkcont">Products</Link>
-                <Link to="/buyProducts"className="cartLinkCont linkcont">Cart</Link>
+                <Link to="/buyProducts"className="cartLinkCont linkcont">Cart 
+                    <span className={cartTotalItems ? "cartNotifications" : "noCartNotification"}> {cartTotalItems}</span>
+                </Link>
             </div>
         )
     }
 }
+
+
+const mapStateToProps = (state) => {
+    return {
+        cartItems: state.cart.cartItems
+    }
+}
+
+export default connect(mapStateToProps)(Topbar);
