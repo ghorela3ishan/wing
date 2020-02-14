@@ -5,8 +5,16 @@
         float: left;
         min-width: 60%;
         min-height: 400px;
+        .cartHeading {
+            font-size: 22px;
+           padding-left: 30px;
+        }
     }
     .paymentSec {
+        padding-top: 10px;
+        .paymentHeading {
+            font-size: 22px;
+        }
 
     }
 } 

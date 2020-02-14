@@ -11,6 +11,7 @@ class Topbar extends Component {
                 <Link to="" className="title">
                     <span className="myTravel">My travel</span>
                     <span className="store">Store</span>
+                    <span className="bottomLine"> ( Buy travel pictures )</span>
                 </Link>
                 <Link to="/"  className="productsLinkCont linkcont">Products</Link>
                 <Link to="/buyProducts"className="cartLinkCont linkcont">Cart 

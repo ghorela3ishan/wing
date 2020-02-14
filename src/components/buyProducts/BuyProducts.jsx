@@ -62,9 +62,11 @@ class BuyProducts extends Component {
                     !this.state.paymentStatus ?
                     <div className="buyCont">
                         <div className="itemsTobuySec">
+                            <p className="cartHeading">Items in your cart</p>
                             {this.state.itemsTobuy.map((elm) => <ProductCard {...elm} isCheckout={true}/>)}
                         </div>
                         <div className="paymentSec">
+                            <p className="paymentHeading">Let's complete your payment</p>
                             <PaymentSec onSubmit={this.submitPayment}/>
                         </div>
                     </div> 
